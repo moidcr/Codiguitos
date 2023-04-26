@@ -1,0 +1,21 @@
+=====JS=====
+Validar números en un input
+
+//En el input oninput='ValitityVal(this,event)' min='0' type='number'
+	var AntValue = '';
+	function ValitityVal(ethis,e){
+		var valthis = ethis.value;
+			if(!ethis.validity.valid || !isValidDigit(ethis,e))
+				(ethis.value=AntValue);
+			else
+				AntValue = ethis.value;
+			
+	}
+	function isValidDigit(el, event) {
+		var charC = (event.which) ? event.which : event.keyCode;
+
+		if (charC > 31 && (charC < 48 || charC > 57))
+			return false;
+
+		return true;
+	}
