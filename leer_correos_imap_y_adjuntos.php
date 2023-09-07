@@ -1,3 +1,5 @@
+//=================EJEMPLO 1======================
+
 public function buscar($asunto, $ficheroBusqueda) {
         $emails = imap_search ( $this->conexion, "ALL" );
         if ($emails) {
@@ -67,3 +69,13 @@ public function buscar($asunto, $ficheroBusqueda) {
         } // Fin de si hay emails
         return false; // Sólo sino encontró ficheros
     } // Fin de buscar correos
+//=================EJEMPLO 1======================
+
+
+
+
+//=================EJEMPLO 2======================
+
+https://es.stackoverflow.com/questions/201853/c%C3%B3mo-leer-email-entrante-y-descargar-los-ficheros-adjuntos-php
+
+//=================EJEMPLO 2======================
